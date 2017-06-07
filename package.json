@@ -1,0 +1,30 @@
+{
+  "name": "bimayfaktap",
+  "version": "1.0.0",
+  "description": "break Binusmaya 2017's captcha using Tesseract OCR",
+  "main": "faktap.js",
+  "dependencies": {
+    "cz-conventional-changelog": "^2.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunturaf/bimayfaktap.git"
+  },
+  "author": "Guntur Akhmad; Naufal Fadhil",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gunturaf/bimayfaktap/issues"
+  },
+  "homepage": "https://github.com/gunturaf/bimayfaktap#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

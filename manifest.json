@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+
+  "name": "bimayfaktap",
+  "short_name": "bimayfaktap",
+  "description": "bimayfaktap break captcha using Tesseract OCR",
+  "version": "1.0",
+
+  "author": "Guntur Akhmad <guntur.fauzi@binus.ac.id>; Naufal Fadhil <muhammad.fadhil003@binus.ac.id>",
+  "homepage_url": "https://konsep.akafuri.com/",
+  "incognito": "spanning",
+
+  "icons": {
+      "16": "images/aesthetics-16.png",
+      "48": "images/aesthetics-48.png",
+      "128": "images/aesthetics-128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://binusmaya.binus.ac.id/login/index.php"],
+      "js": [
+          "jquery-3.2.1.min.js",
+          "tesseract.js",
+          "faktap.js"
+      ],
+      "css": ["faktap.css"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "tesseract/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "bimayfaktap"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://binusmaya.binus.ac.id/"
+  ],
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+
+}
